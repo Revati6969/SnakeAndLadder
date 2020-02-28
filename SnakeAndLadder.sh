@@ -20,6 +20,18 @@ function play()
          $SNAKE)
             position=$(($position - $die)) ;;
       esac
+
+      if [[ $position -gt 100 ]]
+      then
+         position=$(($position-$die))
+      fi 
+      
+      if [[ $position -eq 100 ]]
+      then
+         echo "You won"
+         break
+      fi
+
       if [[ $position -lt 0 ]]
       then
          position=0
