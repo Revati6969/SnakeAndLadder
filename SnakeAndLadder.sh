@@ -1,3 +1,4 @@
 #!/bin/bash -x
-echo "Snake and Ladder Proggram"
 
+PLAYER=1
+position=0
